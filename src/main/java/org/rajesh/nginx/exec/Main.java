@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 
 /**
  * @author Rajesh Dwivedi
@@ -17,5 +18,10 @@ public class Main {
         final String HOST = "";
         final String URI = "";
         LOGGER.info("Is cache cleared ? {}", handleCache.clear(URI, HOST));
+
+        final ArrayList<String> uris = new ArrayList<>();
+        uris.add(URI);
+        uris.add(URI);
+        handleCache.clear(uris, HOST);
     }
 }
