@@ -6,7 +6,6 @@ import org.apache.http.client.methods.HttpRequestBase;
 
 /**
  * @author Rajesh Dwivedi
- * Date: 4/15/21
  */
 public class HttpPurge extends HttpRequestBase {
     public static final String METHOD_NAME = "PURGE";
